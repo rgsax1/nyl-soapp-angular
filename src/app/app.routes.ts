@@ -13,16 +13,26 @@ import { FormSectorComponent } from './site/sector/form-sector/form-sector.compo
 import { ListSectorComponent } from './site/sector/list-sector/list-sector.component';
 import { FormUserComponent } from './site/user/form-user/form-user.component';
 import { ListUserComponent } from './site/user/list-user/list-user.component';
+import { FormEquipmentGeneralComponent } from './site/equipment/form-equipment-general/form-equipment-general.component';
+import { ListEquipmentGeneralComponent } from './site/equipment/list-equipment-general/list-equipment-general.component';
+import { ListMaintenanceElectricalComponent } from './site/maintenance/list-maintenance-electrical/list-maintenance-electrical.component';
+import { ListMaintenanceMechanicalComponent } from './site/maintenance/list-maintenance-mechanical/list-maintenance-mechanical.component';
+import { ListMaintenanceComponent } from './site/maintenance/list-maintenance/list-maintenance.component';
 
 export const routes: Routes = [
     {path:'', component: HomeComponent, pathMatch: 'full'},
     {path:'about', component: AboutComponent, pathMatch: 'full'},
     {path:'form-equipment', component: FormEquipmentComponent, pathMatch: 'full'},
     {path:'list-equipment', component: ListEquipmentComponent, pathMatch: 'full'},
+    {path:'form-equipment-general', component: FormEquipmentGeneralComponent, pathMatch: 'full'},
+    {path:'list-equipment-general', component: ListEquipmentGeneralComponent, pathMatch: 'full'},
     {path:'login', component: LoginComponent, pathMatch: 'full'},
     {path:'form-maintenance', component: FormMaintenanceComponent, pathMatch: 'full'},
     {path:'form-maintenance-electrical', component: FormMaintenanceElectricalComponent, pathMatch: 'full'},
     {path:'form-maintenance-mechanical', component: FormMaintenanceMechanicalComponent, pathMatch: 'full'},
+    {path:'list-maintenance', component: ListMaintenanceComponent, pathMatch: 'full'},
+    {path:'list-maintenance-electrical', component: ListMaintenanceElectricalComponent, pathMatch: 'full'},
+    {path:'list-maintenance-mechanical', component: ListMaintenanceMechanicalComponent, pathMatch: 'full'},
     {path:'form-order', component: FormOrderComponent, pathMatch: 'full'},
     {path:'list-order', component: ListOrderComponent, pathMatch: 'full'},
     {path:'form-sector', component: FormSectorComponent, pathMatch: 'full'},

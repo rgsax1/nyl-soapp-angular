@@ -1,1 +1,84 @@
-<p>navbar works!</p>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://static.wixstatic.com/media/9c9740_03734c15a34c445c8e486cd1e1ced3b5~mv2.png/v1/crop/x_0,y_46,w_3518,h_1681/fill/w_188,h_90,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/NYL_BRANCO.png"
+                    alt="Meu Site" height="45">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="equipmentDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Equipamento
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="equipmentDropdown">
+                            <li><a class="dropdown-item" href="/form-equipment">Equipamentos</a>
+                            <li><a class="dropdown-item" href="/form-equipment-general">Equipamentos Gerais</a>
+                            <li><a class="dropdown-item" href="/form-sector">Setores</a></li>
+                            <li><a class="dropdown-item" href="/list-equipment">Listar Equipamentos</a>
+                            <li><a class="dropdown-item" href="/list-equipment-general">Listar Equipamentos Gerais</a>
+                            </li>
+                            <li><a class="dropdown-item" href="/list-sector">Listar Setores</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="maintenanceDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Manutenção
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="maintenanceDropdown">
+                            <li><a class="dropdown-item" href="/form-maintenance">Criar
+                                    Manutenção</a></li>
+                            <li><a class="dropdown-item"
+                                    href="/form-maintenance-electrical">Criar
+                                    Manutenção Elétrica</a></li>
+                            <li><a class="dropdown-item"
+                                    href="/form-maintenance-mechanical">Criar
+                                    Manutenção Mecânica</a></li>
+                            <li><a class="dropdown-item" href="/list-maintenance">Listar
+                                    Manutenções</a></li>
+                            <li><a class="dropdown-item" href="/list-maintenance-electrical">Listar
+                                    Manutenções Elétricas</a></li>
+                            <li><a class="dropdown-item" href="/list-maintenance-mechanical">Listar
+                                    Manutenções Mecânicas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="orderDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Ordem de Serviço
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="orderDropdown">
+                            <li><a class="dropdown-item" href="/form-order">Criar Ordem de Serviço</a>
+                            </li>
+                            <li><a class="dropdown-item" href="/list-order">Listar Ordem de Serviços</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Usuário
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                            <li><a class="dropdown-item" href="/form-user">Criar Usuário</a></li>
+                            <li><a class="dropdown-item" href="/list-user">Listar Usuários</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</body>
+
