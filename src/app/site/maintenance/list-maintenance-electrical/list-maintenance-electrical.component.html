@@ -1,1 +1,56 @@
-<p>list-maintenance-electrical works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Manutenções Elétricas</title>
+</head>
+<body>
+<div class='container'>
+    <br>
+    <div class="row">
+        <div class="card col-md-8 offset-md-2">
+            <h2 class='text-center'>Lista de Manutenções Elétricas</h2>
+            <div class="card-body">
+                <a href="list_maintenance_elctrical.php" class="btn btn-primary mb-3">Criar Manutenção Elétrica</a>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Tipo da Manutenção Elétrica</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <div>Manutenção Elétrica 1</div>
+                                <div id="editForm_1" style="display:none;">
+                                    <form method="POST" action="">
+                                        <input type="hidden" name="edit_id" value="1">
+                                        <input type="text" name="new_type" value="Manutenção Elétrica 1" required>
+                                        <button type="submit" name="edit_type" class="btn btn-success btn-sm">Salvar</button>
+                                    </form>
+                                </div>
+                            </td>
+                            <td>
+                                <button class="btn btn-warning btn-sm" onclick="showEditForm(1)">Editar</button>
+                                <a href="list_maintenance_electrical.php?delete=1" class="btn btn-danger btn-sm" onclick="return confirm('Tem certeza que deseja excluir esse tipo de manutenção?')">Excluir</a>
+                            </td>
+                        </tr>
+                        <!-- Adicione mais linhas conforme necessário -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function showEditForm(id) {
+        let editForm = document.getElementById('editForm_' + id);
+        editForm.style.display = (editForm.style.display === 'none') ? 'block' : 'none';
+    }
+</script>
+</body>
+</html>

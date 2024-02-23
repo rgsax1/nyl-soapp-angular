@@ -1,0 +1,14 @@
+.contact-container {
+          text-align: center;
+          margin-top: 30px;
+}
+
+.contact-container p {
+          max-width: 500px;
+          margin: 0 auto;
+          text-align: justify;
+}
+
+.contact-container > img {
+    width: 30%;
+}

@@ -1,1 +1,48 @@
-<p>list-equipment-general works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Equipamentos Gerais</title>
+</head>
+<body>
+<div class="container mt-5">
+    <a href="/form-equipment-general" class="btn btn-secondary mt-3">Criar Equipamento Geral</a>
+    <h2>Lista de Equipamentos Gerais</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Fabricante do Equipamento</th>
+                <th>Modelo do Equipamento</th>
+                <th>Descrição</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Fabricante 1</td>
+                <td>Modelo 1</td>
+                <td>Descrição 1</td>
+                <td>
+                    <a href="#" class="btn btn-warning btn-sm">Editar</a>
+                    <a href="#" class="btn btn-danger btn-sm" style="margin-left: 10px;" onclick="return confirm('Tem certeza que deseja excluir este equipamento?')">Deletar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Fabricante 2</td>
+                <td>Modelo 2</td>
+                <td>Descrição 2</td>
+                <td>
+                    <a href="#" class="btn btn-warning btn-sm">Editar</a>
+                    <a href="#" class="btn btn-danger btn-sm" style="margin-left: 10px;" onclick="return confirm('Tem certeza que deseja excluir este equipamento?')">Deletar</a>
+                </td>
+            </tr>
+            <!-- Repita as linhas acima para cada item -->
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

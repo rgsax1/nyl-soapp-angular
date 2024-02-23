@@ -1,1 +1,25 @@
-<p>form-maintenance-mechanical works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Manutenção Mecânica</title>
+</head>
+<body>
+<div class="container mt-5">
+    <h2>Criar Manutenção Mecânica</h2>
+
+    <form method="POST" action="" class="mt-3">
+        <div class="form-group">
+            <label for="type">Tipo:</label>
+            <input type="text" class="form-control" name="type" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Criar Manutenção Mecânica</button>
+
+        <!-- Botão secundário para redirecionar para a página list_maintenance_mechanical.php -->
+        <a href="list_maintenance_mechanical.php" class="btn btn-secondary">Ver Manutenções Mecânicas</a>
+    </form>
+</div>
+</body>
+</html>

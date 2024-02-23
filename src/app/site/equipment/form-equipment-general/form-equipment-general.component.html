@@ -1,1 +1,32 @@
-<p>form-equipment-general works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Equipment General</title>
+</head>
+<body>
+<div class="container mt-5">
+    <a href="/list-equipment-general" class="btn btn-secondary">Listar Equipamentos Gerais</a>
+    <h2>Create Equipment General</h2>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="description">Descrição:</label>
+            <input type="text" class="form-control" name="description" required>
+        </div>
+
+        <div class="form-group">
+            <label for="manufacturer">Fabricante:</label>
+            <input type="text" class="form-control" name="manufacturer" required>
+        </div>
+
+        <div class="form-group">
+            <label for="model">Modelo:</label>
+            <input type="text" class="form-control" name="model" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Criar equipamento geral</button>
+    </form>
+</div>
+</body>
+</html>

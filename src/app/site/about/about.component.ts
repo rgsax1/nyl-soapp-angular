@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
+  imagePath:string = "assets/img/logo.jpg";
 
 }

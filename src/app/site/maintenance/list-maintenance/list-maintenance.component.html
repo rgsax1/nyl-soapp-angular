@@ -1,1 +1,72 @@
-<p>list-maintenance works!</p>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Listagem de Manutenções</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Lista de Manutenções Cadastradas</h2>
+
+        <div class="table-responsive mt-4">
+            <table class='table table-bordered'>
+                <thead class='thead-dark'>
+                    <tr>
+                        <th>ID</th>
+                        <th>Data de Emissão</th>
+                        <th>Registro</th>
+                        <th>Revisão</th>
+                        <th>Usuário</th>
+                        <th>Equipamento</th>
+                        <th>Manutenções Elétricas</th>
+                        <th>Manutenções Mecânicas</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2024-02-23</td>
+                        <td>Registro de manutenção 1</td>
+                        <td>1</td>
+                        <td>Usuário 1</td>
+                        <td>Equipamento 1</td>
+                        <td>Manutenção Elétrica 1, Manutenção Elétrica 2</td>
+                        <td>Manutenção Mecânica 1, Manutenção Mecânica 2</td>
+                        <td>
+                            <form method='post'>
+                                <input type='hidden' name='id' value='1'>
+                                <button type='submit' class='btn btn-danger btn-sm delete-btn'>Deletar</button>
+                                <a href='edit_maintenance.php?id=1' class='btn btn-primary btn-sm'>Editar</a>
+                            </form>
+                        </td>
+                    </tr>
+                    <!-- Mais linhas de tabela conforme necessário -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Evento de clique no botão de deletar
+            document.querySelectorAll('.delete-btn').forEach(function (button) {
+                button.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    var form = this.closest('form');
+                    var maintenanceId = form.querySelector('input[name="id"]').value;
+
+                    if (confirm('Tem certeza que deseja deletar esta manutenção?')) {
+                        // Simule a submissão do formulário via AJAX
+                        // Aqui você pode adicionar sua lógica AJAX para excluir a manutenção
+                        // Por enquanto, apenas recarregamos a página
+                        location.reload();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

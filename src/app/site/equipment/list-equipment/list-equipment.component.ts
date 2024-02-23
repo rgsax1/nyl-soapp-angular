@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './list-equipment.component.css'
 })
 export class ListEquipmentComponent {
+deleteEquipment(arg0: any) {
+throw new Error('Method not implemented.');
+}
 
 }

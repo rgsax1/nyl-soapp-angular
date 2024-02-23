@@ -1,1 +1,59 @@
-<p>form-maintenance works!</p>
+<body>
+    <div class="container mt-4">
+        <h2>Cadastrar Manutenção</h2>
+
+        <form method="post" action="#" class="mt-4">
+            <div class="form-group">
+                <label for="emissao_manutencao">Emissão da Manutenção:</label>
+                <input type="date" name="emissao_manutencao" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="registro_manutencao">Registro da Manutenção:</label>
+                <input type="text" name="registro_manutencao" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="revisao_manutencao">Revisão da Manutenção:</label>
+                <input type="number" name="revisao_manutencao" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="id_usuario">Selecione o Usuário:</label>
+                <select name="id_usuario" class="form-control">
+                    <option value="1">Usuário 1</option>
+                    <option value="2">Usuário 2</option>
+                    <!-- Adicione mais opções conforme necessário -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="id_equipamento">Selecione o Equipamento:</label>
+                <select name="id_equipamento" class="form-control">
+                    <option value="1">Equipamento 1</option>
+                    <option value="2">Equipamento 2</option>
+                    <!-- Adicione mais opções conforme necessário -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="id_manutencoes_eletricas[]">Selecione as Manutenções Elétricas:</label>
+                <select name="id_manutencoes_eletricas[]" multiple class="form-control">
+                    <option value="1">Manutenção Elétrica 1</option>
+                    <option value="2">Manutenção Elétrica 2</option>
+                    <!-- Adicione mais opções conforme necessário -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="id_manutencoes_mecanicas[]">Selecione as Manutenções Mecânicas:</label>
+                <select name="id_manutencoes_mecanicas[]" multiple class="form-control">
+                    <option value="1">Manutenção Mecânica 1</option>
+                    <option value="2">Manutenção Mecânica 2</option>
+                    <!-- Adicione mais opções conforme necessário -->
+                </select>
+            </div>
+
+            <input type="submit" value="Cadastrar" class="btn btn-primary">
+        </form>
+    </div>
+
+</body>

@@ -1,1 +1,38 @@
-<p>form-equipment works!</p>
+<div class="container mt-5">
+    <a href="/list-equipment" class="btn btn-secondary mt-3">Listar Equipamentos</a>
+    <h2>Criar Equipamento</h2>
+    <form method="post" action="">
+        <div class='form-group'>
+            <label>Informação Geral do Equipamento:</label>
+            <select name="equipment_general_info_id" id="equipment_general_info" class="form-control" required>
+
+            </select>
+        </div>
+        <div class='form-group'>
+            <label>Fabricante do Equipamento:</label>
+            <input type='text' class="form-control" name='edited_equipmentManufacturer' disabled>
+        </div>
+        <div class='form-group'>
+            <label>Modelo do Equipamento:</label>
+            <input type='text' class="form-control" name='edited_equipmentModel' disabled>
+        </div>
+        <div class='form-group'>
+            <label>Descrição:</label>
+            <input type='text' class="form-control" name='edited_description' disabled>
+        </div>
+        <div class='form-group'>
+            <label>Batismo:</label>
+            <input type='text' class="form-control" name='baptism' required>
+        </div>
+        <div class='form-group'>
+            <label>Data de Instalação:</label>
+            <input type='date' class="form-control" name='installation_date' required>
+        </div>
+        <div class='form-group'>
+            <label>Setor:</label>
+            <select name="sector_id" class="form-control" required>
+
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Criar Equipamento</button>
+    </form>

@@ -1,1 +1,62 @@
-<p>form-order works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pedido</title>
+    <!-- Adicione o link para o Bootstrap CSS -->
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Formulário de Pedido</h1>
+        <form method="post" action="" class="mt-4">
+            <div class="mb-3">
+                <label for="equipment_id" class="form-label">ID do Equipamento:</label>
+                <select name="equipment_id" id="equipment_id" class="form-select">
+                    <!-- Resultados da consulta SQL para equipamentos -->
+                    <!-- Exemplo: <option value='1'>Equipamento 1</option> -->
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="sector_id" class="form-label">ID do Setor:</label>
+                <select name="sector_id" id="sector_id" class="form-select">
+                    <!-- Resultados da consulta SQL para setores -->
+                    <!-- Exemplo: <option value='1'>Setor 1</option> -->
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="operator_id" class="form-label">ID do Operador:</label>
+                <select name="operator_id" id="operator_id" class="form-select">
+                    <!-- Resultados da consulta SQL para operadores -->
+                    <!-- Exemplo: <option value='1'>Operador 1</option> -->
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="responsible_id" class="form-label">ID do Responsável:</label>
+                <select name="responsible_id" id="responsible_id" class="form-select">
+                    <!-- Resultados da consulta SQL para responsáveis -->
+                    <!-- Exemplo: <option value='1'>Responsável 1</option> -->
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="defect" class="form-label">Defeito:</label>
+                <textarea name="defect" id="defect" class="form-control"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="activity_done" class="form-label">Atividade Realizada:</label>
+                <textarea name="activity_done" id="activity_done" class="form-control"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="priority_level_id" class="form-label">ID do Nível de Prioridade:</label>
+                <select name="priority_level_id" id="priority_level_id" class="form-select">
+                    <!-- Resultados da consulta SQL para níveis de prioridade -->
+                    <!-- Exemplo: <option value='1'>Prioridade 1</option> -->
+                </select>
+            </div>
+            <div class="mb-3">
+                <input type="submit" value="Enviar" class="btn btn-primary">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
