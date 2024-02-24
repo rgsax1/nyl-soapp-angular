@@ -20,7 +20,7 @@ import { ListMaintenanceMechanicalComponent } from './site/maintenance/list-main
 import { ListMaintenanceComponent } from './site/maintenance/list-maintenance/list-maintenance.component';
 
 export const routes: Routes = [
-    {path: '**', redirectTo: ''}
+    {path: '**', redirectTo: ''},
     {path:'', component: HomeComponent, pathMatch: 'full'},
     {path:'about', component: AboutComponent, pathMatch: 'full'},
     {path:'form-equipment', component: FormEquipmentComponent, pathMatch: 'full'},
